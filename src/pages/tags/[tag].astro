@@ -1,0 +1,54 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+
+
+
+export async function getStaticPaths()
+{
+	const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),);
+	const tags = posts.map((post) => post.data.tags).flat().filter((value) => value !== undefined);
+
+
+
+    return tags.map((tag) => {
+    const filteredPosts = posts.filter((post: any) => post.data.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+
+};
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		
+	</head>
+	<body>
+		<Header />
+		<main>
+			
+  <p>Posts tagged with {tag}</p>
+  <ul>
+    {posts.map((post: any) => <li> <a href={post.url}>{post.data.title}</a></li>)}
+  </ul>
+
+			
+		</main>
+		<Footer />
+	</body>
+</html>
