@@ -1,19 +1,16 @@
-# Astro Starter Kit: Blog
+# A Barebones Astro Blog!
 
-```sh
-npm create astro@latest -- --template blog
-```
+This is the simplest a blog can get. It's almost one page, has a collection of tags, and a basic about page.
+It's built off the Astro starter blog template, with the very starting of customization.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<img width="1665" height="1885" alt="Image" src="https://github.com/user-attachments/assets/d6f5adc8-b493-4d0f-820f-4b50c9d8e690" />
 
-Features:
+## ❓Why?
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+This simple repo is meant to test building a site similar to [Steph Ango's blog](https://stephango.com/) using Astro. The layout seemed perfect for Astro, something that could be whipped up in an afternoon as a coding exercise.
+
+This project isn't styled yet. This is just building the very basics first as a proof of concept. The rough layout is there. It's only a little CSS and some tweaks away from being a great little blog.
+
 
 ## 🚀 Project Structure
 
@@ -53,9 +50,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
 
 ## Credit
 
