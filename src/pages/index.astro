@@ -44,11 +44,11 @@ console.log(posts.map((post:any)=>post.data.tags).flat());
 
         <h3>Tags</h3>
         <div style="display: flex; flex-wrap: wrap; margin: 0 auto">
-            <ul>
+            
             {tags.map((tag) => (
-                <li><a href={`/tags/${tag}`}>{tag}</a></li>
+                <a href={`/tags/${tag}`}>{tag},</a><span>&nbsp;</span>
             ))}
-        </ul>
+        
         </div>
 
 			<section>
