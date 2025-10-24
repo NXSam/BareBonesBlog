@@ -3,7 +3,7 @@
 This is the simplest a blog can get. It's almost one page, has a collection of tags, and a basic about page.
 It's built off the Astro starter blog template, with the very starting of customization.
 
-<img alt="Image of the site deployed as an example." src="https://github.com/user-attachments/assets/0f7f9bc9-51ae-475f-b7bb-947c541d0307" />
+<img alt="Image of the site deployed as an example." src="https://github.com/user-attachments/assets/73a1793b-ce46-4bdc-8a67-c2bf1be2fcbd" />
 
 ## ❓Why?
 
