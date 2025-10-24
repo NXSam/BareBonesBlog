@@ -11,8 +11,9 @@ const { date } = Astro.props;
 		date.toLocaleDateString('en-ca', {
 			month: '2-digit',
 			year: 'numeric',
+			day: 'numeric',
 			
 			// day: 'numeric',
-		}).replace("/", " • ")
+		})
 	}
 </time>
