@@ -61,7 +61,7 @@ console.log(posts.map((post:any)=>post.data.tags).flat());
 						posts.map((post) => (
 							<li>
 								<a href={`/blog/${post.id}/`} style="text-decoration: none">
-									<FormattedDate date={posts[0].data.pubDate} /><span>&nbsp;-&nbsp;&nbsp;</span>{post.data.title}
+									<FormattedDate date={post.data.pubDate} /><span>&nbsp;-&nbsp;&nbsp;</span>{post.data.title}
 
 								</a>
 							</li>
